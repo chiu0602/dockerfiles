@@ -10,4 +10,6 @@ RUN apt-get update && \
   apt-get install -y \
     libgstreamer0.10-dev \
     libgl1-mesa-dev libglu1-mesa-dev \
-    libgtk2.0-dev
+    libgtk2.0-dev && \
+  apt-get clean autoclean && \
+  apt-get autoremove -y
