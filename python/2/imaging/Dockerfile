@@ -6,14 +6,11 @@
 
 FROM chiu0602/python2-baseline
 
+ENV GST_VERSION 1.0
+
 RUN apt-get update && \
   apt-get install -y \
-    libgstreamer0.10-dev \
-    gstreamer1.0-plugins-base \
-    gstreamer1.0-plugins-good \
-    gstreamer1.0-plugins-ugly \
-    gstreamer1.0-pulseaudio \
-    gstreamer1.0-plugins-bad \
+    gstreamer-$GST_VERSION gstreamer-plugins-base-$GST_VERSION \
     libgl1-mesa-dev libglu1-mesa-dev \
     libgtk2.0-dev && \
   apt-get clean autoclean && \
