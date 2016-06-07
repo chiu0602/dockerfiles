@@ -14,4 +14,5 @@ RUN apt-get update && \
     libgl1-mesa-dev libglu1-mesa-dev \
     libgtk2.0-dev && \
   apt-get clean autoclean && \
-  apt-get autoremove -y
+  apt-get autoremove -y && \
+  ldconfig
