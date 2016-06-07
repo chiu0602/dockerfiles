@@ -6,8 +6,7 @@
 
 FROM chiu0602/python2-baseline
 
-RUN apt-get clean && \
-  apt-get update && \
+RUN apt-get update && \
   apt-get install -y \
     libgstreamer0.10-dev \
     libgl1-mesa-dev libglu1-mesa-dev \
