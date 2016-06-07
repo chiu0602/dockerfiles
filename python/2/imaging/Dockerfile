@@ -12,6 +12,7 @@ RUN apt-get update && \
   apt-get install -y \
     libgstreamer$GST_VERSION libgstreamer-plugins-base$GST_VERSION \
     libgl1-mesa-dev libglu1-mesa-dev \
+    libsdl2-dev \
     libgtk2.0-dev && \
   apt-get clean autoclean && \
   apt-get autoremove -y && \
