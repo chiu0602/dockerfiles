@@ -1,7 +1,7 @@
 #Python 2.7 with wxpython and omniorb
 FROM cromo/omniorbhy
 
-ENV OMNIORB_VERSION 4.2.1
+ENV WXPYTHON_VERSION 4.2.1
 
 RUN mkdir /build && \
   cd /build && \
