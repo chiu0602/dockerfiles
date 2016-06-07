@@ -16,6 +16,8 @@ RUN apt-get update && \
   omniorb-nameserver \
   python-omniorb \
   python-omniorb-doc && \
+  apt-get clean autoclean && \
+  apt-get autoremove -y && \
   rm -rf /var/lib/apt/lists/*
   
 RUN cp -r /usr/lib/python2.7/dist-packages/* /usr/local/lib/python2.7/site-packages
