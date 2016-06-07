@@ -8,5 +8,5 @@ FROM chiu0602/python2-baseline
 
 RUN apt-get update && \
   apt-get install -y \
-    libgl1-mesa-dev \
+    libgl1-mesa-dev libglu1-mesa-dev \
     libgtk2.0-dev
