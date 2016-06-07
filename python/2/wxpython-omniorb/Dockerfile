@@ -1,5 +1,11 @@
 #Python 2.7 with wxpython and omniorb
-FROM python:2
+#
+# --- Image Stack ---
+# chiu0602/python2-wxpython-omniorb
+# chiu0602/python2-imaging
+# chiu0602/python2-baseline
+
+FROM chiu0602/python2-imaging
 
 ENV WXPYTHON_VERSION 3.0.2.0
 
