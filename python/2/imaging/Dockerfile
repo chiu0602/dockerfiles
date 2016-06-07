@@ -8,12 +8,5 @@ FROM chiu0602/python2-baseline
 
 RUN apt-get update && \
   apt-get install -y \
-    libpng-dev \
-    libtiff-dev \
-    libzip-dev \
-    tcl tcl-dev \
-    tk tk-dev \
-    libwebp-dev \
-    ImageMagick \
     libgl1-mesa-dev \
     libgtk2.0-dev
