@@ -17,6 +17,8 @@ RUN apt-get update && \
   python-omniorb \
   python-omniorb-doc && \
   rm -rf /var/lib/apt/lists/*
+  
+RUN cp -r /usr/lib/python2.7/dist-packages/* /usr/local/lib/python2.7/site-packages
 
 RUN mkdir /build && \
   cd /build && \
