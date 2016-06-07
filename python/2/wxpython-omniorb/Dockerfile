@@ -1,4 +1,4 @@
-#Python 2.7 with wxpython and omniorb
+#Python 2 with wxpython and omniorb
 #
 # --- Image Stack ---
 # chiu0602/python2-wxpython-omniorb
