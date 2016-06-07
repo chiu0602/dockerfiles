@@ -15,4 +15,5 @@ RUN apt-get update && \
     tk tk-dev \
     libwebp-dev \
     ImageMagick \
+    libgl \
     libgtk2.0-dev
