@@ -3,8 +3,7 @@ FROM cromo/omniorbhy
 
 ENV OMNIORB_VERSION 4.2.1
 
-RUN && \
-  mkdir /build && \
+RUN mkdir /build && \
   cd /build && \
   curl -SL "http://sourceforge.net/projects/wxpython/files/wxPython/$WXPYTHON_VERSION/wxPython-src-$WXPYTHON_VERSION.tar.bz2" -o wxPython.tar.bz2 && \
   mkdir /build/wxPython && \
