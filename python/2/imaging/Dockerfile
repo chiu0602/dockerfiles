@@ -6,7 +6,7 @@
 
 FROM chiu0602/python2-baseline
 
-ENV GST_VERSION 1.0
+ENV GST_VERSION 0.10
 
 RUN apt-get update && \
   apt-get install -y \
