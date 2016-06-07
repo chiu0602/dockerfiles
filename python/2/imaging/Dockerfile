@@ -10,7 +10,8 @@ ENV GST_VERSION 1.0
 
 RUN apt-get update && \
   apt-get install -y \
-    gstreamer-$GST_VERSION gstreamer$GST_VERSION-plugins-base \
+    libgstreamer-$GST_VERSION-dev \
+    gstreamer-$GST_VERSION* \
     libgl1-mesa-dev libglu1-mesa-dev \
     libgtk2.0-dev && \
   apt-get clean autoclean && \
