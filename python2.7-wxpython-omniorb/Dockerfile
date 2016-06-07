@@ -1,5 +1,5 @@
 #Python 2.7 with wxpython and omniorb
-FROM cromo/omniorbhy
+FROM python:2
 
 ENV WXPYTHON_VERSION 3.0.2.0
 
