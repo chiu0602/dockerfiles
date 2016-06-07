@@ -1,7 +1,16 @@
 #Python 2.7 with wxpython and omniorb
 FROM cromo/omniorbhy
 
-ENV WXPYTHON_VERSION 4.2.1
+ENV WXPYTHON_VERSION 3.0.2.0
+
+RUN apt-get update && \
+  apt-get install -y \
+  omniidl \
+  omniidl-python \
+  omniorb-nameserver \
+  python-omniorb \
+  python-omniorb-doc && \
+  rm -rf /var/lib/apt/lists/*
 
 RUN mkdir /build && \
   cd /build && \
