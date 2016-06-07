@@ -10,9 +10,9 @@ RUN apt-get update && \
   apt-get install -y \
     libpng-dev \
     libtiff-dev \
-    zlib-dev \
     libzip-dev \
     tcl tcl-dev \
     tk tk-dev \
-    libwebp libwebp-dev \
+    libwebp-dev \
     ImageMagick \
+    libgtk2.0-dev
