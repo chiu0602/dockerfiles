@@ -6,7 +6,8 @@ USER root
 #wxpython dependencies
 ENV GST_VERSION 0.10
 RUN apt-get update && \
-  apt-get install -y \
+  apt-get install -y --no-install-recommends \
+    build-essential \
     python python-dev \
     libgstreamer$GST_VERSION libgstreamer-plugins-base$GST_VERSION \
     libgl1-mesa-dev libglu1-mesa-dev \
@@ -21,7 +22,7 @@ RUN mkdir /build && \
   cd /build && \
   curl -SL "http://sourceforge.net/projects/wxpython/files/wxPython/$WXPYTHON_VERSION/wxPython-src-$WXPYTHON_VERSION.tar.bz2" -o wxPython.tar.bz2 && \
   mkdir /build/wxPython && \
-  tar -jxvf wxPython.tar.bz2 --strip-components=1 -C /build/wxPython && \
+  tar -jxf wxPython.tar.bz2 --strip-components=1 -C /build/wxPython && \
   cd /build/wxPython/wxPython && \
   python ./build-wxpython.py --build_dir=../wxBuild && \
   python ./build-wxpython.py --install --build_dir=../wxBuild && \
@@ -30,7 +31,7 @@ RUN mkdir /build && \
 
 #install omniorb
 RUN apt-get update && \
-  apt-get install -y \
+  apt-get install -y --no-install-recommends \
   omniidl \
   omniidl-python \
   omniorb-nameserver \
