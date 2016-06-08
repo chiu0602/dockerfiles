@@ -7,10 +7,9 @@ USER root
 ENV GST_VERSION 0.10
 RUN apt-get update && \
   apt-get install -y \
-    python \
+    python python-dev \
     libgstreamer$GST_VERSION libgstreamer-plugins-base$GST_VERSION \
     libgl1-mesa-dev libglu1-mesa-dev \
-    libsdl2-dev \
     libgtk2.0-dev && \
   apt-get clean autoclean && \
   apt-get autoremove -y
