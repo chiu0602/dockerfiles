@@ -1,6 +1,8 @@
 #Debian with Python, wxpython and omniorb
 FROM chiu0602/x11client
 
+USER root
+
 #wxpython dependencies
 ENV GST_VERSION 0.10
 RUN apt-get update && \
