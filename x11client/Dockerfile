@@ -14,7 +14,7 @@ RUN addgroup --system xusers && \
 
 # Install packages required for connecting against X Server
 RUN apt-get update && \
-  apt-get install -y \
+  apt-get install -y --no-install-recommends \
     xauth \
     vim-tiny && \
   apt-get clean autoclean && \
