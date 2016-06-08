@@ -6,7 +6,7 @@ USER root
 RUN apt-get update && \
   apt-get install -y --no-install-recommends \
     python \
-    python-wxgtk2.8 \
+    python-wxgtk3.0 \
     omniidl \
     omniidl-python \
     omniorb-nameserver \
