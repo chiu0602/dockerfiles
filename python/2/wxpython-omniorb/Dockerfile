@@ -17,9 +17,8 @@ RUN apt-get update && \
   python-omniorb \
   python-omniorb-doc && \
   apt-get clean autoclean && \
-  apt-get autoremove -y
-  
-RUN cp -r /usr/lib/python2.7/dist-packages/* /usr/local/lib/python2.7/site-packages
+  apt-get autoremove -y && \
+  cp -r /usr/lib/python2.7/dist-packages/* /usr/local/lib/python2.7/site-packages
 
 RUN mkdir /build && \
   cd /build && \
@@ -29,4 +28,5 @@ RUN mkdir /build && \
   cd /build/wxPython/wxPython && \
   python ./build-wxpython.py --build_dir=../wxBuild && \
   python ./build-wxpython.py --install --build_dir=../wxBuild && \
-  cd && rm -rf /build
+  cd && rm -rf /build && \
+  ldconfig

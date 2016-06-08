@@ -15,5 +15,4 @@ RUN apt-get update && \
     libsdl2-dev \
     libgtk2.0-dev && \
   apt-get clean autoclean && \
-  apt-get autoremove -y && \
-  ldconfig
+  apt-get autoremove -y
