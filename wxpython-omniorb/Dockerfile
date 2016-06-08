@@ -7,7 +7,7 @@ USER root
 ENV GST_VERSION 0.10
 RUN apt-get update && \
   apt-get install -y --no-install-recommends \
-    curl \
+    curl ca-certificates \
     build-essential \
     python python-dev \
     libgstreamer$GST_VERSION libgstreamer-plugins-base$GST_VERSION \
