@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 ########################################################################################
 # Installation procedure for the Raspberry Pi - IP Camera
