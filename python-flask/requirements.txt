@@ -7,6 +7,7 @@ marshmallow
 marshmallow-sqlalchemy
 flask-marshmallow
 Flask-Bower
+pytz
 
 rdflib
 flask_rdf
