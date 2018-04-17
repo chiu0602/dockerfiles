@@ -1,12 +1,11 @@
 Flask
 mysqlclient
-pyodbc
+pymssql
 sqlalchemy
 flask_sqlalchemy
 marshmallow
 marshmallow-sqlalchemy
 flask-marshmallow
-apscheduler
 Flask-Bower
 
 rdflib
