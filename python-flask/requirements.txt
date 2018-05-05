@@ -8,6 +8,7 @@ marshmallow-sqlalchemy
 flask-marshmallow
 Flask-Bower
 pytz
+beautifulsoup4
 
 rdflib
 flask_rdf
