@@ -11,4 +11,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 WORKDIR /usr/src/app
 
-#CMD [ "python", "./server.py" ]
+COPY main.py ./
+
+CMD [ "python", "./main.py" ]
