@@ -9,6 +9,8 @@ flask-marshmallow
 Flask-Bower
 pytz
 beautifulsoup4
+numpy
+TA-Lib
 
 rdflib
 flask_rdf
