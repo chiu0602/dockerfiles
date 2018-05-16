@@ -10,8 +10,9 @@ Flask-Bower
 pytz
 beautifulsoup4
 numpy
-TA-Lib
+keras
 
+TA-Lib
 rdflib
 flask_rdf
 flask-restless
