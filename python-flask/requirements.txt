@@ -12,6 +12,8 @@ beautifulsoup4
 numpy
 keras
 tensorflow
+sklearn
+pandas
 
 TA-Lib
 rdflib
