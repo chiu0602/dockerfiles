@@ -14,8 +14,4 @@ keras
 tensorflow
 sklearn
 pandas
-
-TA-Lib
-rdflib
-flask_rdf
-flask-restless
+requests
