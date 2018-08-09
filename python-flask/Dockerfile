@@ -6,12 +6,6 @@ RUN apt-get update \
 
 WORKDIR /tmp
 
-#RUN curl -L --insecure http://downloads.sourceforge.net/project/ta-lib/ta-lib/0.4.0/ta-lib-0.4.0-src.tar.gz -o ta-lib-0.4.0-src.tar.gz && \
-#    tar -xvzf ta-lib-0.4.0-src.tar.gz && \
-#    cd ta-lib/ && \
-#    ./configure --prefix=/usr && \
-#    make && make install
-
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
