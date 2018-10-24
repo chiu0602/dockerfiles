@@ -19,4 +19,3 @@ sshtunnel
 pebble
 Flask-BasicAuth
 XlsxWriter
-pyinstaller
