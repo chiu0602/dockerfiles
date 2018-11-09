@@ -19,3 +19,4 @@ sshtunnel
 pebble
 Flask-BasicAuth
 XlsxWriter
+matplotlib
