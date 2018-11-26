@@ -20,3 +20,4 @@ pebble
 Flask-BasicAuth
 XlsxWriter
 matplotlib
+tqdm
