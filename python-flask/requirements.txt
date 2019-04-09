@@ -21,3 +21,4 @@ Flask-BasicAuth
 XlsxWriter
 matplotlib
 tqdm
+schedule
