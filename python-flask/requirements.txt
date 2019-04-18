@@ -22,3 +22,4 @@ XlsxWriter
 matplotlib
 tqdm
 schedule
+flask-socketio
