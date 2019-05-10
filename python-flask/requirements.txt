@@ -23,3 +23,4 @@ matplotlib
 tqdm
 schedule
 flask-socketio
+eventlet
