@@ -6,7 +6,6 @@ flask_sqlalchemy
 marshmallow
 marshmallow-sqlalchemy
 flask-marshmallow
-Flask-Bower
 pytz
 beautifulsoup4
 numpy
