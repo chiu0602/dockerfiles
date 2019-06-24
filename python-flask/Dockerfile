@@ -1,7 +1,7 @@
 FROM python:3.6
 
 RUN apt-get update \
-    && apt-get install -y --no-install-recommends freetds-dev \
+    && apt-get install -y --no-install-recommends freetds-dev freetds-bin freetds-common \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /tmp
