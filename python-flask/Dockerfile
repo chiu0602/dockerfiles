@@ -5,8 +5,10 @@ RUN curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add - \
     && curl https://packages.microsoft.com/config/debian/9/prod.list > /etc/apt/sources.list.d/mssql-release.list \
     && apt-get update \
     && ACCEPT_EULA=Y DEBIAN_FRONTEND=noninteractive apt-get install -y \
+    apt-transport-https \
     msodbcsql17 \
     unixodbc-dev \
+    vim
     && rm -rf /var/lib/apt/lists/* \
     # Adjust Locales to prevemt MS SQL Driver error
     && touch /usr/share/locale/locale.alias \
