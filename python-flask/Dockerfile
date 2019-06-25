@@ -1,4 +1,4 @@
-FROM python:3.6
+FROM python:3.7
 
 # Install Official Microsoft SQL Server Driver and ODBC
 RUN curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add - \
