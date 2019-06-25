@@ -7,7 +7,7 @@ RUN apt-get update \
 WORKDIR /tmp
 ENV FREETDS_VER 1.1.6
 ENV CFLAGS="-fPIC"
-RUN curl ftp://ftp.freetds.org/pub/freetds/stable/freetds-${FREETDS_VER}.tar.gz
+RUN curl ftp://ftp.freetds.org/pub/freetds/stable/freetds-${FREETDS_VER}.tar.gz > freetds-${FREETDS_VER}.tar.gz
 RUN tar zxvf freetds-${FREETDS_VER}.tar.gz
 WORKDIR /tmp/freetds-${FREETDS_VER}
 RUN ./configure --enable-msdblib \
