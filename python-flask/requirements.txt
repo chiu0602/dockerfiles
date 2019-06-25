@@ -1,6 +1,5 @@
 Flask
 mysqlclient
-pymssql
 sqlalchemy
 flask_sqlalchemy
 marshmallow
