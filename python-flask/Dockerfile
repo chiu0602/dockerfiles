@@ -13,10 +13,7 @@ RUN curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add - \
     apt-transport-https \
     msodbcsql17 \
     vim \
-    && rm -rf /var/lib/apt/lists/* \
-    # Adjust Locales to prevemt MS SQL Driver error
-    && touch /usr/share/locale/locale.alias \
-    && sed -i -e 's/# en_US.UTF-8 UTF-8/en_US.UTF-8 UTF-8/' /etc/locale.gen && locale-gen
+    && rm -rf /var/lib/apt/lists/*
 
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
