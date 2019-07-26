@@ -1,10 +1,7 @@
 Flask
-mysqlclient
+pymssql
 sqlalchemy
 flask_sqlalchemy
-marshmallow
-marshmallow-sqlalchemy
-flask-marshmallow
 pytz
 beautifulsoup4
 numpy
@@ -13,13 +10,9 @@ tensorflow
 sklearn
 pandas
 requests
-sshtunnel
 pebble
 Flask-BasicAuth
-XlsxWriter
-matplotlib
-tqdm
 schedule
 flask-socketio
 eventlet
-pyodbc
+applicationinsights
