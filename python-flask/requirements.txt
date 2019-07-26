@@ -1,5 +1,5 @@
 Flask
-pymssql
+pyodbc
 sqlalchemy
 flask_sqlalchemy
 pytz
