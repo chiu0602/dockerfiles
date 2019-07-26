@@ -1,4 +1,4 @@
-FROM python:3.7
+FROM python:3.7-stretch
 
 WORKDIR /tmp
 
@@ -7,7 +7,7 @@ RUN curl http://ftp.br.debian.org/debian/pool/main/a/apt/apt-transport-https_1.8
 
 # Install Official Microsoft SQL Server Driver and ODBC
 RUN curl https://packages.microsoft.com/keys/microsoft.asc | apt-key add - \
-    && curl https://packages.microsoft.com/config/debian/10/prod.list > /etc/apt/sources.list.d/mssql-release.list \
+    && curl https://packages.microsoft.com/config/debian/9/prod.list > /etc/apt/sources.list.d/mssql-release.list \
     && apt-get update \
     && ACCEPT_EULA=Y apt-get install -y \
     unixodbc-dev \
