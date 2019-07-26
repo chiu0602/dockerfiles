@@ -1,4 +1,5 @@
 Flask
+mysqlclient
 pyodbc
 sqlalchemy
 flask_sqlalchemy
