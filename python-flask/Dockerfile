@@ -2,7 +2,7 @@ FROM python:3.7-stretch
 
 WORKDIR /tmp
 
-RUN curl http://ftp.br.debian.org/debian/pool/main/a/apt/apt-transport-https_1.8.2_all.deb > apt-transport-https.deb \
+RUN curl http://ftp.us.debian.org/debian/pool/main/a/apt/apt-transport-https_1.4.9_amd64.deb > apt-transport-https.deb \
     && dpkg -i apt-transport-https.deb
 
 # Install Official Microsoft SQL Server Driver and ODBC
