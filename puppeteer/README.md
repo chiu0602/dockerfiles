@@ -11,27 +11,11 @@ and [screenshots scripts](#screenshots-tools)
 ## docker tags
 
 - `latest`
-- `1`
-- `1.1.1`
-- `1.1.0`
-- `1.0.0`
-- `0`
-- `0.13.0`
-- `0.12.0`
-- `0.11.0`
-- `0.10.2`
-- `0.10.1`
-- `0.10.0`
-- `0.9.0`
 
 ## install
 
 ```
 docker pull chiu0602/puppeteer:latest
-# OR
-docker pull chiu0602/puppeteer:1.0.0
-# OR
-docker pull chiu0602/puppeteer:1
 
 ```
 
