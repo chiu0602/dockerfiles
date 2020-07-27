@@ -34,7 +34,7 @@ RUN mkdir /screenshots \
     && chown -R pptruser:pptruser /screenshots \
     && chown -R pptruser:pptruser /app \
     && chown -R pptruser:pptruser /tools \
-    && chmod 744 full_screenshot full_screenshot_series screenshot screenshot_series
+    && chmod 744 /tools/full_screenshot /tools/full_screenshot_series /tools/screenshot /tools/screenshot_series
 
 # Run everything after as non-privileged user.
 USER pptruser
